@@ -1,5 +1,48 @@
 # AISD-interviewAssignment
 ---
+# Task 1
+
+1. What is your preferred language when building predictive models and why?
+
+我在建立預測模型時偏好使用 Python 。
+
+- 擁有豐富的數據科學和機器學習庫。
+- 語法簡單明瞭，易於閱讀和維護。
+- 輕鬆整合到各種生產環境中。
+
+
+2. Provide an example of when you used SQL to extract data.
+
+```sql
+SELECT u.user_id, u.age, u.gender, o.order_date, o.total_amount
+FROM users u
+JOIN orders o ON u.user_id = o.user_id
+WHERE o.order_date BETWEEN '2023-01-01' AND '2023-12-31'
+ORDER BY o.order_date DESC;
+```
+
+3. Give an example of a situation where you disagreed upon an idea or solution design with a co-worker. How did you handle the case?
+
+在我之前的一個項目中，我和一位同事在選擇機器學習模型上產生了分歧。我們在開發一個預測銷售額的模型，他堅持使用隨機森林模型，而我認為LSTM模型更適合處理我們的時間序列數據。
+
+1. **數據分析**：首先，我們共同分析了數據，並確認我們的數據確實具有時間依賴性，這是我選擇LSTM的主要理由。
+2. **開放溝通**：我們開了一個會議，我們各自詳細闡述了自己選擇模型的理由和預期效果。我強調了LSTM在捕捉長期依賴方面的優勢，而他則指出隨機森林在解釋性和處理多樣化特徵上的優勢。
+3. **實驗驗證**：我們決定實際測試這兩個模型。我們分工合作，各自負責實現一個模型，然後用相同的數據集進行訓練和測試。
+4. **結果比較**：最終，我們比較了兩個模型的性能指標，如準確率、召回率和F1分數。結果顯示，LSTM在我們的數據集上表現更佳。
+
+4. What are your greatest strengths and weaknesses and how will these affect your performance here?
+
+#### 優點：
+1. **解決問題的能力**：我擅長分析問題，找到有效的解決方案。例如，在處理數據異常和模型優化方面，我能夠快速找到瓶頸並提出改進方案。這將有助於提升團隊的效率和模型的準確性。
+2. **快速學習**：我有很強的學習能力，能夠迅速掌握新技術和工具。這意味著我能夠快速適應新環境並應用最新的技術來解決問題，為公司帶來創新和競爭優勢。
+
+#### 缺點：
+1. **部分專業知識依賴自學**：因為許多數據科學的專業知識是通過在線課程自學的，並且自己開發項目，所以在處理一些模型細節時可能需要協助和指導。這意味著在某些情況下，我可能需要向經驗豐富的同事請教或尋求幫助，以確保模型設計和實施的最佳效果。
+
+
+
+
+# Task 2
 
 ## 項目概述
 
